@@ -1,0 +1,25 @@
+.curve {
+  height: 17.8%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  /* z-index: 1; */
+}
+.curveInside {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  /* z-index: 2; */
+}
+.curve img {
+  max-width: 100%;
+  height: 130px;
+}
+
+@media only screen and(max-width:1110px) {
+  .curve {
+    display: flex;
+    align-items: flex-end;
+  }
+}

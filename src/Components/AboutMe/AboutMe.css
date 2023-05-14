@@ -1,0 +1,128 @@
+.AboutMeContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  /* height: 10%; */
+  min-height: 100vh;
+  min-height: fit-content;
+  color: antiquewhite;
+}
+.icons a {
+  margin: 0 6px;
+  color: #0077b5;
+}
+
+.icons a svg {
+  width: 30px;
+  height: 30px;
+  /* margin-right: 15px; */
+}
+.tagline {
+  font-size: 20px;
+  margin: 5px 0 0 0;
+  font-family: "Poppins Light";
+}
+.profilePicture {
+  box-shadow: 0 1px 0px 0px white;
+  border-radius: 50%;
+  height: 380px;
+  width: 380px;
+  margin: 0 0px 0 100px;
+  display: flex;
+  justify-content: center;
+}
+.profilePictureBackground {
+  height: 95%;
+  width: 95%;
+  background-image: url("../../Assets/profile.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.profilePictureBackground:hover {
+  transform: scale(1.07);
+  transition: 0.5s ease-out;
+}
+
+.btnGroup button {
+  margin-left: 20px;
+  margin-top: 20px;
+  border: 1px solid orangered;
+  border-radius: 50px;
+  font-size: 20px;
+  font-style: italic;
+}
+.hireBtn {
+  background-color: rgb(241, 247, 213);
+}
+.resumeBtn {
+  background-color: rgb(240, 91, 37);
+}
+.hireBtn:hover {
+  background-color: rgb(206, 230, 103);
+}
+.resumeBtn:hover {
+  background-color: rgb(112, 182, 214);
+}
+
+@media screen and (max-width: 1110px) {
+  .profilePicture {
+    margin: 0 0px 0 80px;
+  }
+  .icons a {
+    margin: 0 2px;
+  }
+  .icons a svg {
+    width: 20px;
+    height: 20px;
+  }
+  .tagline {
+    font-size: 17px;
+    margin: 5px 0 0 0;
+    font-family: "Poppins Light";
+  }
+  .btnGroup button {
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px solid orangered;
+    border-radius: 50px;
+    font-size: 18px;
+    font-style: italic;
+  }
+  .h1Size {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 910px) {
+  .profilePicture {
+    height: 320px;
+    width: 320px;
+    margin: 0 0px 0 40px;
+  }
+}
+@media screen and (max-width: 810px) {
+  .profilePicture {
+    margin: 0 !important;
+  }
+  .AboutMeContainer {
+    flex-direction: column-reverse;
+  }
+  .h1Size {
+    font-size: 25px;
+  }
+  .icons a svg {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .profilePicture {
+    height: 270px;
+    width: 270px;
+    margin-top: -90px;
+  }
+  .AboutMeContainer {
+    width: 100%;
+  }
+}
